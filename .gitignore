@@ -1,0 +1,7 @@
+.DS_Store
+__pycache__/
+dist/
+# 07 がノートブックの config.yaml をコピーして作る（アプリが読む設定）
+app/config.yaml
+.claude/
+.isaac/

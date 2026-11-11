@@ -1,0 +1,7 @@
+# Databricks Apps の起動設定（07 がこのフォルダをデプロイします）
+command:
+  - python
+  - app.py
+env:
+  - name: DATABRICKS_WAREHOUSE_ID
+    valueFrom: sql-warehouse

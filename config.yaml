@@ -1,0 +1,21 @@
+# ハンズオン共通の設定です。すべてのノートブックが 00_config 経由でこのファイルを読み込みます。
+# 変更したら、各ノートブックを最初から実行し直してください。
+
+# 保存先（Unity Catalog）
+catalog: workspace          # Free Edition の既定のカタログ（カタログ一覧で名前を確認してください）
+schema: scope_handson       # このハンズオン用に作るスキーマ
+volume: files               # 依頼書や回答リストを置くボリューム
+
+# 依頼書（01 で作成し、02 で読み込みます）
+request_file: 調査依頼書_REQ-2026-0001.xlsx
+
+# 合成データ
+data:
+  seed: 42                  # 乱数の種（同じ値なら毎回同じデータになります）
+  vehicles_per_model_year: 900   # 型式 × 年式あたりの台数
+
+# AI（02 の任意セルだけで使います。使えない環境では飛ばして進めます）
+ai_model: system.ai.gpt-oss-120b
+
+# アプリ（07 でデプロイします。英小文字・数字・ハイフンで 26 文字まで）
+app_name: scope-handson
